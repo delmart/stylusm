@@ -1,0 +1,77 @@
+---
+title: WELCOME TO STYLUS
+---
+
+    <div id="banner">
+      <div class="expandOpen">
+        <h1>STYL.US</h1>
+        <p>Turn your pen into you best friend
+        Make every line you write count..</p>
+        <%= link_to "GET YOUR STYLUS", "/pricing.html", class: "btn btn-primary btn-lg" %>
+      </div>
+    </div>
+
+    <div id="gradient-bg">
+      <div class="container text-center">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="card">
+                <%= image_tag "writing.png" %>
+                <h3>Natural writing</h3>
+                <p>Don't change your habits, write with a pen on paper notebooks</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="card">
+                <%= image_tag "computer.png" %>
+                <h3>Sync. copy</h3>
+                <p>Stylus instantaneously copy your text on your computer, in real-time</p> 
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="card">
+                <%= image_tag "pie.png" %>
+                <h3>Analytics</h3>
+                <p>Get feedbacks on the way you write, your favorite words, your frequent mistakes</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="card">
+                <%= image_tag "data.png" %>
+                <h3>Storing your texts</h3>
+                <p>Everything line writen with your stylus is stored in the cloud, so that it's never lost</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="newsletter" class="text-center">
+              <h2>Get news from stylus</h2>
+              <p>Leave us your mail and get stylus news</p>
+             <form class="form-inline">
+              <input type="email" placeholder="votre email" class="form-control">
+              <input type="submit" value="Subscribe" class="btn btn-primary"> 
+            </form>      
+    </div>
+
+    <div id="map"style="width: 100%; height: 400px;"></div>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(34.009063,-118.49311);
+        var myOptions = {
+          zoom: 16,
+          center: myLatlng,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [{"featureType":"water","stylers":[{"visibility":"on"},{"color":"#b5cbe4"}]},{"featureType":"landscape","stylers":[{"color":"#efefef"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#83a5b0"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#bdcdd3"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e3eed3"}]},{"featureType":"administrative","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"road"},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{},{"featureType":"road","stylers":[{"lightness":20}]}]
+        };
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: "You are here!"
+        });
+        </script>
+
+

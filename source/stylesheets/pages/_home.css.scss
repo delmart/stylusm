@@ -1,0 +1,45 @@
+#gradient-bg{
+	padding: 150px 0;
+	background: #8e9eab; /* fallback for old browsers */
+background: -webkit-linear-gradient(bottom, $greylight, $greydark);
+background: -o-linear-gradient(bottom, $greylight, $greydark);
+background: linear-gradient(to top, $greylight, $greydark); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+
+#newsletter{
+	padding: 60px 0;
+}
+
+
+.card{
+	height: 186px;
+	margin: 2em 0;
+}
+
+
+#banner {
+	background-image: image-url("background1.jpg");
+	background-size: cover;
+	height: 600px;
+	padding: 150px 80px;
+	.btn {
+		margin-top: 20px;
+	}
+
+}
+
+.team img{
+	padding:40px 20px;
+}
+
+
+.product{
+	padding: 80px 40px;
+	img{
+		width: 300px;
+		padding: 0 auto;
+	}
+}
+

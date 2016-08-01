@@ -1,0 +1,13 @@
+- name: Stylus Basic
+  picture: images/black.png
+  summary: Black 
+  price: get me for $199
+- name: Stylus Silver 
+  picture: images/silver.png
+  summary: silver Limited edition
+  price: get me for $249
+- name: Stylus White 
+  picture: images/white.png
+  summary: white Limited edition
+  price: get me for $249
+
