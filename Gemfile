@@ -16,6 +16,7 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 # Deploy to GitHub Pages
 gem 'middleman-deploy', '~> 1.0'
 gem 'middleman-autoprefixer'
+gem 'middleman-gh-pages'
 
 # Assets
 gem 'jquery-middleman'
